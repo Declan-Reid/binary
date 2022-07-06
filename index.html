@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary  Converter</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Binary Converter</h1>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h2>Text to binary</h2>
+            <div class="input" id="input">
+                <input type="text" class="input-box" id="input-text" placeholder="Example text">
+                <input type="submit" value="Convert" onclick="convertToBinary()">
+                <input type="submit" value="Copy" onclick="copyBinaryValue()">
+            </div>
+            <div class="output" id="output">
+                <h3>Output:</h3>
+                <p id="output-text">""</p>
+                <input type="submit" value="Copy" onclick="copyBinary()">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h2>Binary to Text</h2>
+            <div class="input">
+                <input type="text" class="input-box" id="input-binary" placeholder="Example binary">
+                <input type="submit" value="Convert" onclick="convertToText()">
+                <input type="submit" value="Copy" onclick="copyTextValue()">
+            </div>
+            <div class="output" id="output">
+                <h3>Output:</h3>
+                <p id="output-binary">""</p>
+                <input type="submit" value="Copy" onclick="copyText()">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
