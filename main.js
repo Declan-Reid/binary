@@ -55,3 +55,13 @@ function copyText() {
     console.log('To copy:', text);
     navigator.clipboard.writeText(text);
 }
+
+async function pasteBinaryValue() {
+    const paste = await navigator.clipboard.readText();
+    document.getElementById("input-text").value = paste;
+}
+
+async function pasteTextValue() {
+    const paste = await navigator.clipboard.readText();
+    document.getElementById("input-binary").value = paste;
+}
